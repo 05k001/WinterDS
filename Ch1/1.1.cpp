@@ -51,18 +51,34 @@ int main(){
 	for (int i=0; i<n; i++)
 		cout << *(prt1 + i) << "\t";
 
+	start=clock();
+
 	bubblesort(prt1,n);
+
+	finish=clock();
 
 	cout << "\n\n\t The Sorted Numbers in your array are:\n\t";
 
 	for (int i=0; i<n; i++)
 		cout << *(prt1 + i) << "\t";
 
+	int time=finish - start;
+
+	cout << endl; 
+
+	cout << "The bubble sort took: " << time << " Mili-seconds ?" << endl;
 
 
-	double k = n/2;
 
-	
+	double K = *(prt1)/2-1;
+
+	cout << endl;
+
+	cout << "K = " << K;
+
+
+
+
 
 
 
