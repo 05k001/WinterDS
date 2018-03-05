@@ -6,6 +6,7 @@
 #include<ctime>
 #include"BubbleSort.h"
 #include"Selection.h"
+#include"Quicksort.h"
 
 
 void test(){
@@ -53,7 +54,9 @@ int main(){
 
 	start=clock();
 
-	bubblesort(prt1,n);
+	//bubblesort(prt1,n);
+
+	quicksort(prt1,0,n-1);
 
 	finish=clock();
 
@@ -66,22 +69,16 @@ int main(){
 
 	cout << endl; 
 
-	cout << "The bubble sort took: " << time << " Mili-seconds ?" << endl;
+	cout << "The quicksort took: " << time << " Mili-seconds ?" << endl;
 
 
 
-	double K = *(prt1)/2-1;
+	int K = prt1[n/2];
+
 
 	cout << endl;
 
-	cout << "K = " << K;
-
-
-
-
-
-
-
+	cout << "K = " << K << endl;
 
 
 	return 0;
