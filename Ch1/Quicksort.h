@@ -2,7 +2,7 @@
 
 template <typename Obj>
 
-	Obj partition(Obj arr[], Obj low, Obj high){
+	Obj partition(Obj arr[], Obj & low, Obj & high){
 		Obj pivot = arr[high];
 		int i = (low - 1 );
 
@@ -25,7 +25,7 @@ template <typename Obj>
 		if (low<high)
 		{
 
-			Obj pi = partition(arr,low,high);
+			int pi = partition(arr,low,high);
 
 			quicksort(arr,low,pi-1);
 			quicksort(arr,pi +1,high);

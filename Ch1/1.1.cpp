@@ -6,7 +6,9 @@
 #include<ctime>
 #include"BubbleSort.h"
 #include"Selection.h"
-#include"Quicksort.h"
+//#include"Quicksort.h"
+//#include"quicksort(book).h"
+#include"mergesort3.h"
 
 
 void test(){
@@ -52,11 +54,14 @@ int main(){
 	for (int i=0; i<n; i++)
 		cout << *(prt1 + i) << "\t";
 
+	
+	std::vector<int> v(prt1, prt1 + sizeof prt1 / sizeof prt1[0]);
+
 	start=clock();
 
 	//bubblesort(prt1,n);
 
-	quicksort(prt1,0,n-1);
+	mergeSort<auto>(prt1);
 
 	finish=clock();
 

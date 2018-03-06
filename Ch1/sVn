@@ -1,0 +1,6 @@
+# Nmap 7.50 scan initiated Mon Mar  5 01:39:35 2018 as: nmap -osVn 192.168.1.29
+Nmap scan report for 192.168.1.29
+Host is up (0.011s latency).
+All 1000 scanned ports on 192.168.1.29 are closed
+
+# Nmap done at Mon Mar  5 01:39:48 2018 -- 1 IP address (1 host up) scanned in 13.35 seconds
