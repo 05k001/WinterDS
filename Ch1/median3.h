@@ -33,3 +33,5 @@ template<typename CompDawg>
 		return a[right-1];	 
 
 	}
+
+	

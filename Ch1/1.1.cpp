@@ -61,7 +61,7 @@ int main(){
 
 	//bubblesort(prt1,n);
 
-	mergeSort<auto>(prt1);
+	mergeSort<int>(prt1);
 
 	finish=clock();
 

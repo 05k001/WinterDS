@@ -10,7 +10,7 @@ using namespace std;
 
     void merge(int arr[], int l, int m, int r)
 {
-    int i, j, k;
+    int  i, j, k;
     int n1 = m - l + 1;
     int n2 =  r - m;
  
@@ -112,11 +112,17 @@ int main(){
 
     cout << "\nEnter array Size : ";
 
-    long n_1;
+    int n_1;
 
     cin >> n_1;
 
     int prt1 [n_1];
+
+    int arr_size = sizeof(prt1)/sizeof(prt1[0]);
+
+    cout << "Array size: " << arr_size << endl;
+
+
 
     //TODO: Write a random array template function
 
@@ -133,7 +139,7 @@ int main(){
     for (int i=0; i<n_1; i++)
         cout << *(prt1 + i) << "\t";
 
-    int arr_size = sizeof(prt1)/sizeof(prt1[0]);
+    
 
     start=clock();
 
